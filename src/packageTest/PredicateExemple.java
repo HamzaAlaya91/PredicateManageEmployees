@@ -11,18 +11,10 @@ public class PredicateExemple {
 	
 	Predicate<Integer> p = a -> (a>10) ; // creating predicate
 	
-	
 	Predicate<String> str = s -> s.startsWith("a"); // creating predicate
-	
-	
-	
-	
-	
-	
 	
 
 	public static void main(String[] args) {
-		
 		
 		
 		PredicateExemple predicateClass = new PredicateExemple();
@@ -31,7 +23,6 @@ public class PredicateExemple {
 		
 		
 		System.out.println(predicateClass.str.test("sami")); // calling predicate function
-		
 		
 		
 		/* 
@@ -44,8 +35,7 @@ public class PredicateExemple {
 		List<Integer> collect = list.stream().filter(x -> x>10).collect(Collectors.toList());
 		
 		System.out.println(collect);
-		
-		
+	
 	}
 
 }
